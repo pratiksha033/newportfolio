@@ -1,4 +1,4 @@
-🚀 Welcome to My Portfolio!
+   🚀 Welcome to My Portfolio!
 
 Hi, I’m Pratiksha Parihar, a passionate web developer and problem solver with a keen interest in building intuitive and impactful digital experiences. Currently pursuing B.Tech in Computer Science at IIST College, I specialize in frontend and backend development using HTML, CSS, JavaScript, Tailwind CSS, Bootstrap, and Node.js, along with strong problem-solving skills in C and C++.
 
@@ -19,4 +19,8 @@ This is my personal portfolio website, built using HTML, CSS, and JavaScript. Th
 ## Technologies Used
 - **HTML**: Structuring the content and layout of the website.
 - **CSS**: Styling the website and making it responsive.
+
 - **JavaScript**: Adding interactivity to elements (like form validation, animations, etc.).
+## 🔹 Sreenshot of my website
+![Screenshot 2025-02-04 122420](https://github.com/user-attachments/assets/5b764b23-78f6-4fd3-bd40-1b273afc013a)
+

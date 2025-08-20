@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPU Scheduling Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lib/bootstrap.css">
+  <link rel="stylesheet" href="lib/font-awesome.min.css">
+  <link rel="stylesheet" href="lib/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+        <!-- Add a logo or just your project name -->
+        <span class="logo">&#128421;</span>
+        CPU Scheduling
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="cpu.html" target="_blank">FCFS</a>
+      <a href="cpu.html" target="_blank">LRTF</a>
+      <a href="cpu.html" target="_blank">SJF</a>
+      <a href="cpu.html" target="_blank">SRTF</a>
+      <a href="cpu.html" target="_blank">Priority Scheduling</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>CPU Scheduling Visualizer</h1>
+    <p>Explore and compare scheduling algorithms interactively</p>
+  </section>
+
+  <div class="container">
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>01</h2>
+          <h3>FCFS</h3>
+          <p>The First Come First Served (FCFS) algorithm processes jobs in the order of their arrival, ensuring simplicity but sometimes causing delays for short jobs.</p>
+          <a href="https://www.geeksforgeeks.org/program-for-fcfs-cpu-scheduling-set-1/" target="_blank">Read More</a>
+          <a href="cpu.html" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>02</h2>
+          <h3>SJF</h3>
+          <p>Shortest Job First (SJF) selects the job with the shortest burst time next. It's efficient but can starve long-running processes.</p>
+          <a href="https://www.geeksforgeeks.org/program-for-shortest-job-first-or-sjf-cpu-scheduling-set-1-non-preemptive/" target="_blank">Read More</a>
+          <a href="cpu.html" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>03</h2>
+          <h3>LRTF</h3>
+          <p>Longest Remaining Time First gives CPU preference to jobs with the most remaining burst, which can be useful for specific workloads.</p>
+          <a href="https://www.geeksforgeeks.org/priority-cpu-scheduling-with-different-arrival-time-set-2/" target="_blank">Read More</a>
+          <a href="cpu.html" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>04</h2>
+          <h3>SRTF</h3>
+          <p>Shortest Remaining Time First preempts currently running jobs if a new job arrives with a shorter remaining duration, helping minimize average waiting time.</p>
+          <a href="https://www.geeksforgeeks.org/introduction-of-shortest-remaining-time-first-srtf-algorithm/" target="_blank">Read More</a>
+          <a href="cpu.html" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="box">
+        <div class="content">
+          <h2>05</h2>
+          <h3>Priority Scheduling</h3>
+          <p>Priority Scheduling gives CPU access based on task priority, ensuring important jobs finish sooner, but potentially starving low-priority tasks.</p>
+          <a href="https://www.geeksforgeeks.org/priority-cpu-scheduling-with-different-arrival-time-set-2/" target="_blank">Read More</a>
+          <a href="cpu.html" target="_blank">Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Designed & coded by Pratiksha &copy; 2025</p>
+  </footer>
+</body>
+</html>

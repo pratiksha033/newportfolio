@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
+
+body {
+  background: linear-gradient(90deg, #e0f2ff 0%, #bde6ff 100%);
+  font-family: 'Nunito', sans-serif;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0 25px 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main {
+  margin-top: 25px;
+  max-width: 1100px;
+  width: 100%;
+  background: #f9fbff;
+  padding: 30px 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(31, 83, 135, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+#main:hover {
+  box-shadow: 0 14px 45px rgba(31, 83, 135, 0.25);
+}
+
+.navbar {
+  background: linear-gradient(90deg, #a6d0ff 0%, #78b4f7 100%);
+  box-shadow: 0 6px 22px rgba(120, 180, 247, 0.4);
+  padding: 18px 25px;
+  color: #1a3a66;
+  font-weight: 800;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+#btnCalculate {
+  font-weight: 700;
+  font-size: 22px;
+  border: none;
+  background: linear-gradient(90deg, #78b4f7 0%, #4c8bf5 100%);
+  padding: 18px 65px;
+  margin: 50px auto 0;
+  display: block;
+  border-radius: 35px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(76, 139, 245, 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+#btnCalculate:hover,
+#btnCalculate:focus {
+  background: linear-gradient(90deg, #4c8bf5 0%, #78b4f7 100%);
+  box-shadow: 0 14px 38px rgba(76, 139, 245, 0.75);
+  transform: scale(1.07);
+  outline: none;
+}
+
+#resetBtn {
+  padding: 12px 75px;
+  font-weight: 600;
+  color: #4c8bf5;
+  border-radius: 30px;
+  border: 2.5px solid #78b4f7;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+#resetBtn:hover,
+#resetBtn:focus {
+  background: #78b4f7;
+  color: #f0f7ff;
+  border-color: #4c8bf5;
+  box-shadow: 0 7px 25px rgba(76, 139, 245, 0.35);
+}
+
+#gtdBurstTime {
+  background: linear-gradient(90deg, #78b4f7, #4c8bf5);
+  color: white;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 22px 26px;
+  text-align: center;
+  user-select: none;
+  box-shadow: 0 6px 15px rgba(76, 139, 245, 0.6);
+  letter-spacing: 2.2px;
+}
+
+#ganttChart {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  border-collapse: separate;
+  border-spacing: 14px;
+  margin: 40px auto;
+  width: 100%;
+  max-width: 1100px;
+  table-layout: fixed;
+}
+
+#ganttChart td {
+  background: #4c8bf5;
+  padding: 24px 0;
+  color: white;
+  font-weight: 700;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 25px rgba(76, 139, 245, 0.7);
+  cursor: default;
+  user-select: none;
+  transition: background 0.3s ease;
+  letter-spacing: 1.7px;
+}
+
+#ganttChart td:hover {
+  background: #71a4f8;
+  box-shadow: 0 10px 30px rgba(113, 164, 248, 0.9);
+}
+
+#gtdProcessID {
+  padding: 0 28px;
+}
+
+h3,
+b,
+label {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #305986;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
+  color: #305986;
+  font-weight: 600;
+}
+
+.buttonAlgo {
+  border-radius: 20px !important;
+  width: 90px;
+  padding: 9px 12px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #4c8bf5, #78b4f7);
+  border: none;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttonAlgo:hover,
+.buttonAlgo:focus {
+  background: linear-gradient(135deg, #71a4f8, #5a9dfd);
+  box-shadow: 0 9px 23px rgba(87, 136, 255, 0.85);
+  outline: none;
+}
+
+#timeQuantum {
+  width: 110px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: 1.5px solid #78b4f7;
+  font-weight: 600;
+  color: #305986;
+  user-select: none;
+  transition: border-color 0.3s ease;
+}
+
+#timeQuantum:focus {
+  outline: none;
+  border-color: #71a4f8;
+  box-shadow: 0 0 14px rgba(113, 164, 248, 0.75);
+}
+
+.table-bordered {
+  background: #f9fbff;
+  color: #305986;
+  font-weight: 700;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(31, 85, 147, 0.12);
+  overflow: hidden;
+}
+
+.table-bordered thead th {
+  border-bottom: 3px solid #a3cae1;
+  letter-spacing: 1.4px;
+  font-weight: 800;
+}
+
+.table-bordered tbody tr:nth-child(even) {
+  background-color: #dff0ff;
+}
+
+.table-bordered tbody tr:hover {
+  background-color: #c1d6ef;
+}
+
+@media (max-width: 900px) {
+  #main {
+    max-width: 100%;
+    padding: 25px 18px;
+    margin-top: 20px;
+    border-radius: 18px;
+  }
+  #btnCalculate {
+    width: 100%;
+    padding: 20px;
+  }
+  #resetBtn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 16px 0;
+  }
+  #timeQuantum {
+    width: 100%;
+  }
+  #ganttChart {
+    font-size: 26px;
+  }
+}
